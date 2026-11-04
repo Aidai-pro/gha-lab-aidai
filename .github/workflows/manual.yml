@@ -4,11 +4,11 @@ env:
   COURSE: DevOps
 jobs:
   greet:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Переменная
-        run: echo "Курс: $COURSE"
-      - name: Кто запустил
-        run: echo "Запустил: ${{ github.actor }}"
-      - name: Секрет
-        run: echo "Секрет: ${{ secrets.MY_SECRET }}"
+   runs-on: ubuntu-latest
+   steps:
+     - name: Variable
+       run: echo "Course: $COURSE"
+     - name: User
+       run: echo "User: ${{ github.actor }}"
+     - name: Secret
+       run: echo "Secret: ${{ secrets.MY_SECRET }}"
